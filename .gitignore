@@ -1,0 +1,42 @@
+# Gitignore Herokey configs
+# version: 0.0.1
+#
+
+# Ignore bundler config.
+/.bundle
+
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# Ignore uploaded files in development.
+/storage/*
+!/storage/.keep
+
+/public/assets
+.byebug_history
+
+# Ignore master key for decrypting credentials and more.
+/config/master.key
+
+/config/globals/development.local.yml
+
+/public/packs
+/public/packs-test
+/node_modules
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity
+
+rubocop_cache/
+
+/config/credentials/staging.key
+/config/credentials/production.key
+/config/credentials/za_production.key
+/config/database.yml
+.env
+
+.idea
+.DS_STORE
