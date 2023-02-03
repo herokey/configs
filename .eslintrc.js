@@ -1,5 +1,5 @@
 // Eslint Herokey configs
-// version: 1.0.0
+// version: 1.0.1
 
 module.exports = {
   // Environments your script is designed to run in.
@@ -76,8 +76,12 @@ module.exports = {
     ],
     'vue/no-v-html': 0,
     'vue/no-v-text-v-html-on-component': 0,
-    'vue/no-reserved-component-names': 0,
-    'vue/multi-word-component-names': 0,
+    'vue/no-reserved-component-names': ['error', {
+      disallowVueBuiltInComponents: true,
+    }],
+    'vue/multi-word-component-names': ['error', {
+      ignores: [],
+    }],
   },
   settings: {
     'import/resolver': {
